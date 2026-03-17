@@ -19,6 +19,11 @@ link_file "$DOTFILES_DIR/bashrc"    ~/.bashrc
 link_file "$DOTFILES_DIR/gitconfig" ~/.gitconfig
 link_file "$DOTFILES_DIR/profile"   ~/.profile
 
+# --- Night Light ---
+echo "==> Enabling Night Light..."
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 3500
+
 # --- APT packages ---
 echo "==> Installing apt packages..."
 sudo apt update
