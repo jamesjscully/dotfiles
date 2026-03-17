@@ -1,0 +1,7 @@
+# APT packages
+git
+curl
+build-essential
+
+# Snap packages
+# spotify
